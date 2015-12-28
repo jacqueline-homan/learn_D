@@ -3,6 +3,9 @@ import std.string; // for chomp
 import std.conv;   // for to!int
 
 void main() {
+	/* Promptibg user for input, reading it,
+	then outputting it to the terminal
+	*/
 
 	writeln("How many students registered for the coding class? ");
 	int numStudents = chomp(readln()).to!int;
@@ -14,6 +17,7 @@ void main() {
 	string name = chomp(readln()).to!string;
 	writeln("Weclome, ", name, " to our class of ", numStudents, " students and ", numTeachers, " teachers :)");
 
-	//writeln("Type: ", void.stringof);
-	//writeln("Length in bits: ", void.sizeof);
+	/*writeln("Type: ", void.stringof);
+	writeln("Length in bits: ", void.sizeof);
+	*/
 }
